@@ -22,7 +22,12 @@ for (let select of dropdown) {
 }
 
 const updateFlag = (element) => {
-    console.log(element);
+    let currCode = element.value;
+    // console.log(currCode)
+    let countryCode = countryList[currCode];
+    let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+    let img = element.parentElement.querySelector("img");
+    img.src = newSrc;
 }
 
 
