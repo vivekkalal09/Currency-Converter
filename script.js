@@ -1,1 +1,6 @@
-Hello this is vivek kalal hope you are doing well
+const dropdown = document.querySelectorAll(".dropdown select");
+
+for (let select of dropdown) {
+    let newOption = document.createElement("option");
+}
+
